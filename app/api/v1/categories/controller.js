@@ -68,7 +68,6 @@ const destroy = async (req, res) => {
     next(err);
   }
 };
-
 module.exports = {
   index,
   find,

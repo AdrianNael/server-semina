@@ -62,7 +62,7 @@ const updateCategories = async (req) => {
 const deleteCategories = async (req) => {
   const { id } = req.params;
 
-  const result = await Categories.findOne({
+  const result = await Categories.findByIdAndDelete({
     _id: id,
   });
 
